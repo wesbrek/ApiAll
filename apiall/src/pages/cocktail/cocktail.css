@@ -1,0 +1,250 @@
+
+.cocktail__form{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem;
+    color: black;
+}
+
+h1{
+    margin: 0;
+}
+
+
+
+.cocktail__form .form__select{
+    font-size: 1.5rem;
+    width: 20.5rem;
+}
+
+.cocktail__form .fa-globe-americas{
+    font-size: 2rem;
+}
+
+.cocktail__form .form__label input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  padding:8px 0 5px 0;
+  font-size: 1.5rem;
+  color: black;
+  letter-spacing: .15em;
+}
+
+.cocktail__form .form__label input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid blue;	
+}
+
+.cocktail__form .form__select {
+    background:transparent;
+    padding: .25em;
+    letter-spacing: .15em;
+    border-radius: 0;
+    border:none;	
+    outline:none;
+    color: black;
+    border-bottom: .1rem solid black;
+}
+
+.cocktail__form .form__select option{
+    color: black;
+}
+
+.cocktail__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cocktail_card{
+    width: 20rem;
+    text-align: center;
+    border: 1px black solid;
+    margin-bottom: 5rem;
+}
+
+.cocktail_card .littleCard__img{
+    width: 20rem;
+}
+
+
+.makeStyles-paper-1 img{
+    width: 20rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cocktailHero{
+    background: url("../../img/cocktailBackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.cocktailHero h1{
+    font-size: 3rem;
+}
+
+.cocktailHero h1 {
+    position: relative;
+    z-index: 0; 
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  .cocktailHero h1::before {
+    position: absolute;
+    content: '';
+    width: calc(120% );
+    display: block;
+    background-color:#200122;
+    height: 50px;
+    z-index:-1;
+    left: -30px;
+    right: -30px;
+    transform: rotate(-1deg);
+    transition: transform .3s ease;
+  }
+  
+  .cocktailHero h1:hover::before{
+    transform: rotate(5deg);
+  }
+
+.cocktail__container{
+    margin-bottom: 50rem;
+}
+  @media only screen and (min-width: 300px) and (max-width: 767px) {
+
+    .cocktail__form{
+        flex-wrap: wrap;
+    }
+
+    .cocktail__form .form__label .form__input{
+        font-size: 18px;
+    }
+     
+.cocktail__form .form__select{
+    font-size: 18px;
+    width: 13rem;
+    margin-top: 3rem;
+}
+    .btn__searchCocktail{
+        font-size: 20px;
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+
+    
+.cocktailHero h1 {
+    font-size: 30px;
+  }
+
+  .cocktail_card{
+      width: 15rem;
+  }
+
+  .cocktail_card .littleCard__img{
+      width: 13rem;
+  }
+
+  .btn__cocktail{
+      width: 70%;
+      font-size: 18px;
+  }
+
+  .makeStyles-paper-1{
+        padding: 0rem;
+        margin: 0rem;
+        width: 2%;
+  }
+  .makeStyles-paper-1 h2{
+      font-size: 16px;
+      margin-left: 8rem;
+  }
+  .makeStyles-paper-1 p{
+    font-size: 16px;
+    width: 10rem;
+    margin-left: 8rem;
+}
+.makeStyles-paper-1 li{
+    font-size: 16px;
+    width: 10rem;
+    margin-left: 6rem;
+}
+
+.makeStyles-paper-1 img{
+    margin-left: 6rem;
+    width: 10rem;
+}
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) { 
+    .cocktail__form{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 20rem;
+        margin-left: 9rem;
+    }
+
+    .cocktail__form .form__label .form__input{
+        font-size: 20px;
+    }
+     
+.cocktail__form .form__select{
+    font-size: 18px;
+    width: 15rem;
+    margin-top: 3rem;
+}
+
+.btn__searchCocktail{
+    font-size: 20px;
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 90%;
+}
+
+  
+.cocktailHero h1 {
+    font-size: 60px;
+  }
+
+  .cocktail_card{
+      width: 20rem;
+  }
+
+  .cocktail_card .littleCard__img{
+      width: 14rem;
+  }
+
+  .btn__cocktail{
+    width: 70%;
+    font-size: 20px;
+}
+
+
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .cocktail__form{
+        flex-wrap: wrap;
+      
+    }
+
+    .btn__searchCocktail{
+        margin-top: 5rem;
+        padding: 1rem;
+    }
+
+  }

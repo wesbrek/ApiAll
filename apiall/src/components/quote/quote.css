@@ -1,0 +1,34 @@
+.quote__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: .5rem;
+    background-color: #fff;
+}
+
+.quote__text{
+    max-width: 600px;
+    padding-left: 4rem;
+    position: relative;
+}
+
+.quote__text::before{
+    content: open-quote;
+    font-size: 10rem;
+    color: black;
+    position: absolute;
+    left: -1rem;
+    top: -2rem;
+}
+
+.quote__author{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: bold;
+    margin-left: auto;
+    margin-top: 2rem;
+}

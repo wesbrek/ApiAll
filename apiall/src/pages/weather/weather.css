@@ -1,0 +1,318 @@
+.weather__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40rem;
+  background-image: url("../../img/weatherBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.weatherHero {
+  padding-top: 3rem;
+  background: url("../../img/weatherBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.weatherHero h1 {
+  font-size: 3rem;
+}
+
+.thunderstorm {
+  background-image: url("../../img/Thunderstorm.jpg");
+}
+
+.drizzle {
+  background-image: url("../../img/Drizzle.jpg");
+}
+
+.rain {
+  background-image: url("../../img/Rain.jpg");
+}
+
+.snow {
+  background-image: url("../../img/Snow.jpg");
+}
+
+.mist,
+.smoke,
+.fog {
+  background-image: url("../../img/Mist.jpg");
+}
+
+.haze {
+  background-image: url("../../img/Haze.jpg");
+}
+
+.dust,
+.sand {
+  background-image: url("../../img/Dust.jpg");
+}
+
+.ash {
+  background-image: url("../../img/Ash.jpg");
+}
+
+.squall {
+  background-image: url("../../img/Squall.jpg");
+}
+
+.tornado {
+  background-image: url("../../img/Tornado.jpg");
+}
+
+.clear {
+  background-image: url("../../img/Clear.jpg");
+}
+
+.clouds {
+  background-image: url("../../img/Clouds.jpg");
+}
+
+.weathe__form,
+.weather__result {
+  background: #51d1f6;
+  padding: 5rem;
+  text-align: center;
+}
+
+.weathe__form .form__select {
+  font-size: 1.5rem;
+  width: 20.5rem;
+}
+
+.weathe__form .form__label input {
+  border: 0;
+  border-bottom: 1px solid #555;
+  background: transparent;
+  padding: 8px 0 5px 0;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 0.15em;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  width: 20rem;
+}
+.weathe__form .form__label input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.weathe__form .form__select {
+  background: transparent;
+  padding: 0.25em;
+  letter-spacing: 0.15em;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  color: white;
+  border-bottom: 0.1rem solid black;
+}
+
+.weathe__form .form__select option {
+  color: black;
+}
+
+.weathe__form .weather__result {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.weatherLittleCard .littleCard__img {
+  width: 5rem;
+}
+.weatherLittleCard .littleCard__principaltext {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+.weatherLittleCard .littleCard__firstbottomtext,
+.weatherLittleCard .littleCard__secondbottomtext {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.weatherHero h1 {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.weatherHero h1::before {
+  position: absolute;
+  content: "";
+  width: calc(150%);
+  display: block;
+  background-color: #f2994a;
+  height: 50px;
+  z-index: -1;
+  left: -30px;
+  right: -30px;
+  transform: rotate(-1deg);
+  transition: transform 0.3s ease;
+}
+
+.weatherHero h1:hover::before {
+  transform: rotate(5deg);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .weather__container {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .weathe__form {
+    margin-top: 2rem;
+    width: 18rem;
+    height: 16rem;
+    justify-content: start;
+    padding: 0rem;
+  }
+
+  .weathe__form .form__label input {
+    margin-top: 2rem;
+    font-size: 16px;
+    width: 10rem;
+  }
+
+  .weathe__form .form__select {
+    font-size: 1.5rem;
+    width: 10rem;
+    padding: 0;
+
+    font-size: 16px;
+  }
+
+  .btn__weather {
+    font-size: 16px;
+    width: 14rem;
+  }
+
+  .weather__result {
+    margin-top: 3rem;
+    width: 10rem;
+    height: 20rem;
+    padding: 4rem;
+    padding-top: 1rem;
+  }
+
+  .weatherLittleCard h2 {
+    font-size: 18px;
+  }
+
+  .weatherLittleCard h3 {
+    font-size: 16px;
+  }
+
+  .weatherLittleCard .littleCard__img {
+    width: 3rem;
+  }
+
+  .weatherLittleCard .littleCard__principaltext {
+    font-size: 16px;
+  }
+
+  .weatherLittleCard .littleCard__firstbottomtext {
+    font-size: 16px;
+  }
+
+  .weatherLittleCard .littleCard__secondbottomtext {
+    font-size: 16px;
+  }
+
+  .weatherHero h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .weather__container {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .weathe__form {
+    margin-top: 2rem;
+    width: 20rem;
+    justify-content: start;
+    padding: 0rem;
+    height: 20rem;
+  }
+
+  .weathe__form .form__label input {
+    margin-top: 4.5rem;
+    font-size: 16px;
+    width: 10rem;
+  }
+
+  .weathe__form .form__select {
+    font-size: 1.5rem;
+    width: 10rem;
+    padding: 0;
+
+    font-size: 16px;
+  }
+
+  .btn__weather {
+    font-size: 16px;
+    width: 70%;
+  }
+
+  .weather__result {
+    margin-top: 2rem;
+    width: 10rem;
+    height: 20rem;
+    padding: 4rem;
+    padding-top: 1rem;
+  }
+
+  .weatherLittleCard h2 {
+    font-size: 20px;
+  }
+
+  .weatherLittleCard h3 {
+    font-size: 18px;
+  }
+
+  .weatherLittleCard .littleCard__img {
+    width: 3rem;
+  }
+
+  .weatherLittleCard .littleCard__principaltext {
+    font-size: 18px;
+  }
+
+  .weatherLittleCard .littleCard__firstbottomtext {
+    font-size: 16px;
+  }
+
+  .weatherLittleCard .littleCard__secondbottomtext {
+    font-size: 16px;
+  }
+
+  .weatherHero h1 {
+    font-size: 40px;
+  }
+}

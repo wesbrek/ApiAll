@@ -1,0 +1,225 @@
+
+.lyricsHero{
+    background: url("../../img/lyrics.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+.lyricsHero h1 {
+    font-size: 3rem;
+    position: relative;
+    z-index: 0; 
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  .lyricsHero h1::before {
+    position: absolute;
+    content: '';
+    width: calc(120% );
+    display: block;
+    background-color:#EB6864;
+    height: 40px;
+    z-index:-1;
+    left: -30px;
+    right: -30px;
+    transform: rotate(-1deg);
+    transition: transform .3s ease;
+  }
+  
+  .lyricsHero h1:hover::before{
+    transform: rotate(5deg);
+  }
+
+  .lyrics__form{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem;
+    color: black;
+}
+
+h1{
+    margin: 0;
+}
+
+
+
+.lyrics__form .form__select{
+    font-size: 1.5rem;
+    width: 20.5rem;
+}
+
+.lyrics__form .fa-globe-americas{
+    font-size: 2rem;
+}
+
+.lyrics__form .form__label input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  padding:8px 0 5px 0;
+  font-size: 1.5rem;
+  color: black;
+  letter-spacing: .15em;
+}
+
+.lyrics__form .form__label input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid blue;	
+}
+
+.lyrics__form .form__select {
+    background:transparent;
+    padding: .25em;
+    letter-spacing: .15em;
+    border-radius: 0;
+    border:none;	
+    outline:none;
+    color: black;
+    border-bottom: .1rem solid black;
+}
+
+.lyrics__form .form__select option{
+    color: black;
+}
+
+.lyrics__card{
+    display: flex;
+    justify-content: center;
+}
+
+.lyrics__card .littleCard__principaltext{
+    margin-top: 1rem;
+    width: 20rem;
+    margin-right: 8rem;
+}
+
+.band__img{
+ 
+    max-height: 40rem;
+}
+
+.lyricsError{
+    margin-right: 5rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+
+    .lyrics__form{
+        flex-wrap: wrap;
+        margin-top: 0rem;
+    }
+
+    .lyrics__form .form__label .form__input{
+        font-size: 18px;
+        margin-top: 3rem;
+    }
+     
+
+.btn__lyrics{
+    width: 20rem;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 4rem;
+}
+
+.lyrics__card{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.lyric__card{
+    width: 10rem;
+}
+
+
+.lyrics__card .littleCard__principaltext{
+    margin-top: 1rem;
+    width: 15rem;
+    margin-left: 3rem;
+}
+
+
+
+.lyrics__card h2{
+    margin-left: 7rem;
+    width: 10rem;
+}
+
+.band__img{
+    width: 10rem;
+    margin-left: 5rem;
+}
+   
+.lyricsHero h1 {
+    font-size: 20px;
+
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .lyrics__form{
+        flex-wrap: wrap;
+        margin-top: 0rem;
+    }
+
+    .lyrics__form .form__label .form__input{
+        font-size: 18px;
+        margin-top: 3rem;
+    }
+     
+
+.btn__lyrics{
+    width: 20rem;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 4rem;
+}
+
+.lyrics__card{
+    flex-wrap: wrap;
+    
+}
+
+
+.lyrics__card .littleCard__principaltext{
+    margin-top: 1rem;
+    width: 15rem;
+
+}
+
+.band__img{
+    width: 20rem;
+    height: 20rem;
+    margin-right: 3rem;
+}
+
+.lyricsHero h1 {
+    font-size: 25px;
+
+  }
+
+     }
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .band__img{
+        width: 20rem;
+        height: 20rem;
+        margin-right: 3rem;
+    }
+  
+ }

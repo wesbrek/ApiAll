@@ -1,0 +1,50 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    color: white;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.navbar .navbar_firstChild{
+    margin-right: auto;
+}
+
+.navbar li{
+    padding: 1rem;
+}
+
+.navbar_firstChild{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar li:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+
+    .navbar{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) { 
+    .navbar{
+        font-size: 20px;
+    }
+}
